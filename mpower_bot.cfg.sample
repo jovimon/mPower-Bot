@@ -1,0 +1,8 @@
+[Bot]
+token: <put token given by @botmaster here> 
+
+[mPower]
+ip_address: <ipaddress of your mPower device>
+cookie: 01234567890123456789012345678901
+user: <mPower's username - Default: ubnt>
+pass: <mPower's password - Default: ubnt>

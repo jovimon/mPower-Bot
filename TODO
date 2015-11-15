@@ -1,0 +1,16 @@
+TODO LIST
+=========
+
+* Commandline parameters (help and change default config file).
+
+* Various timeout and error handling.
+
+* Add logging.
+
+* Add full support for standard and pro models (3 and 6/8 plugs).
+
+* Limit to a single chat_id, in case you want to keep the bot only for you.
+
+* Add daemon mode.
+
+* Add debug mode.
