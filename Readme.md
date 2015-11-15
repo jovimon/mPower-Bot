@@ -12,6 +12,8 @@ Any Linux Machine with Python installed (tested on Raspberry Pi and Ubuntu).
 
 Python Telegram Bot from here: https://pypi.python.org/pypi/python-telegram-bot
 
+An Ubiquiti mFi mPower device connected to your home network: https://www.ubnt.com/mfi/mpower/
+
 # Contact 
 
 Twitter: @hflistener - @jovimon
