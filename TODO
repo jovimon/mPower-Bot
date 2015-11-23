@@ -5,12 +5,19 @@ TODO LIST
 
 * Various timeout and error handling.
 
-* Add logging.
-
 * Add full support for standard and pro models (3 and 6/8 plugs).
-
-* Limit to a single chat_id, in case you want to keep the bot only for you.
 
 * Add daemon mode.
 
+
+DONE LIST
+=========
+
+* Add logging.
+  Basic logging to file added. 
+
 * Add debug mode.
+  Debug logging added.
+
+* Limit to a single chat_id, in case you want to keep the bot only for you.
+  Added option to pass a chat_id as a parameter.

@@ -1,5 +1,10 @@
+[Log]
+logfile: mpower_bot.log
+loglevel: 20 ; 10:DEBUG 20:INFO
+
 [Bot]
 token: <put token given by @botmaster here> 
+#chat_id: <uncomment and put your chat_id here if you want to limit to your chat>
 
 [mPower]
 ip_address: <ipaddress of your mPower device>
