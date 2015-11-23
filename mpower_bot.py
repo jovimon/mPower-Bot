@@ -49,7 +49,7 @@ def mpower_get_status(config):
 
   r = mpower_session.get('http://' + mpower_ip + '/sensors')
   output = r.json()
-  logging.debug("Status check result: " + r.text)
+  logging.debug(u'Status check result: ' + r.text)
   # Output example:
   #{u'status': u'success', u'sensors': [
   #    {u'relay': 1, u'power': 0.0, u'thismonth': 0, u'lock': 0, u'prevmonth': 0, u'enabled': 0, 
@@ -79,11 +79,11 @@ def mpower_set_status(config, sensor_id, status):
   mpower_session = mpower_login(mpower_ip, mpower_user, mpower_pass, mpower_cookie)
   
   r = mpower_session.post('http://' + mpower_ip + '/sensors/' + sensor_id, data = {"output": status})
-  logging.debug("Status update result: " + r.text)
+  logging.debug(u'Status update result: ' + r.text)
   time.sleep(1)
   r = mpower_session.get('http://' + mpower_ip + '/sensors/' + sensor_id)
   output = r.json()
-  logging.debug("Status check result: " + r.text)
+  logging.debug(u'Status check result: ' + r.text)
   sensor_num = len(output['sensors'])
   sensor = output['sensors'][0]
   sensor_id = sensor.get('port')
@@ -112,7 +112,7 @@ def log_update(update):
     logging.debug('Update %d from %s %s (%d) in chat %d received:', update_id,first_name, last_name, from_id, bot_chat_id)
     logging.debug(update)
   else:
-    logging.info('Update %d from %s %s (%d) in chat %d: Received "%s"', update_id,first_name, last_name, from_id, bot_chat_id, message)
+    logging.info(u'Update %d from %s %s (%d) in chat %d: Received "%s"', update_id,first_name, last_name, from_id, bot_chat_id, message)
 
 def main(argv):
   
